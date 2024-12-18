@@ -11,7 +11,7 @@
         <div class ="alert alert-warning">
         <h3> {{ val.title }} </h3>
             <p> {{ val.anons }} </p>
-
+            <a href="{% url 'news-detail' val.id %}" class="btn - btn-warning"> Читать далее </a>
         </div>
     {% endfor %}
 </div>
